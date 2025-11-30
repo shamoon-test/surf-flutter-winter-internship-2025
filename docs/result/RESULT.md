@@ -16,11 +16,10 @@
 
 ## Использованные технологии
 
--   **Flutter**
 -   **BLoC**
 -   **get_it**
 -   **retrofit + dio**
--   **Localstore**
+-   **localstore**
 -   **go_router**
 -   **build_runner**
 
@@ -29,45 +28,37 @@
 Перед запуском необходимо выполнить генерацию:
 
 ``` sh
-flutter pub get
-```
-
-``` sh
 flutter pub run build_runner build --delete-conflicting-outputs
-```
-
-``` sh
-flutter run
 ```
 
 ## Структура проекта
 
     lib/
     │
-    ├── api/    -   модуль с сетевыми запросами: Retrofit-клиент, модели ответа, вспомогательные классы.
+    ├── api/        -   модуль с сетевыми запросами: Retrofit-клиент, модели ответа, вспомогательные классы.
     │
     ├── core/
-    │   ├── app/    -   MaterialApp с глобавльными провайдерами блоков
-    │   ├── di/ -   сервис локатор с DI
-    │   └── router/ -   роутер с роутами и нижнее меню приложения
+    │   ├── app/        -   MaterialApp с глобавльными провайдерами блоков
+    │   ├── di/         -   сервис локатор с DI
+    │   └── router/     -   роутер с роутами и нижнее меню приложения
     │
     ├── data/
-    │   ├── datasources/
-    │   ├── dto/    -   объекты которые пишутся в БД и извлекаются из нее
+    │   ├── datasources/    -   источники данных - локальные и удаленный
+    │   ├── dto/            -   объекты которые пишутся в БД и извлекаются из нее
     │   ├── repositories/   -   реализация репозиториев
-    │   └── mappers/    -   маппер для преобразования из апи в dto
+    │   └── mappers/        -   маппер для преобразования из апи в dto
     │
     ├── domain/
-    │   ├── entities/   -   сущности для работы бизнес-логики
+    │   ├── entities/       -   сущности для работы бизнес-логики
     │   ├── repositories/   -   интерфейсы репозиториев
-    │   └── usecases/   -   варианты использования
+    │   └── usecases/       -   варианты использования
     │
     ├── presentation/
-    │   ├── bloc/   -   стейт менеджеры (bloc'и и cubit'ы)
-    │   ├── pages/  -   страницы приложения
-    │   └── widgets/ - отдельные виджеты - карточки фруктов, рецептов, кнопки избранного и т.д.
+    │   ├── bloc/       -   стейт менеджеры (bloc'и и cubit'ы)
+    │   ├── pages/      -   страницы приложения
+    │   └── widgets/    -   отдельные виджеты - карточки фруктов, рецептов, кнопки избранного и т.д.
     │
-    └── main.dart   -   точка старта приложения
+    └── main.dart       -   точка старта приложения
 
 ## Demo
 
@@ -79,7 +70,8 @@ flutter run
 
 ---
 
-Автор: Юнусов Шамиль
-Email: shamoon.cool@gmail.com
-GitHub: https://github.com/shamoon-test
-Telegram: [@shamyunusov](https://t.me/shamyunusov)
+ - Автор: Юнусов Шамиль
+ - Email: shamoon.cool@gmail.com
+ - GitHub: https://github.com/shamoon-test
+ - GitLab: https://gitlab.com/sham20
+ - Telegram: [@shamyunusov](https://t.me/shamyunusov)
