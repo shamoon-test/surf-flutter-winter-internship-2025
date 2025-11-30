@@ -51,7 +51,8 @@ flutter pub run build_runner build --delete-conflicting-outputs
     ├── domain/
     │   ├── entities/       -   сущности для работы бизнес-логики
     │   ├── repositories/   -   интерфейсы репозиториев
-    │   └── usecases/       -   варианты использования
+    │   ├── usecases/       -   варианты использования
+    │   └── mappers/        -   мапперы dto - entity
     │
     ├── presentation/
     │   ├── bloc/       -   стейт менеджеры (bloc'и и cubit'ы)

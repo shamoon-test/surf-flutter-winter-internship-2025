@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:nutrition_tech/core/router/routes.dart';
 import 'package:nutrition_tech/domain/entities/filter.dart';
-import 'package:nutrition_tech/domain/mappers/fruit_filters.dart';
+import 'package:nutrition_tech/domain/usecases/fruit_filters.dart';
 import 'package:nutrition_tech/presentation/bloc/fruits_bloc.dart';
 import 'package:nutrition_tech/presentation/bloc/filter_cubit.dart';
 import 'package:nutrition_tech/presentation/bloc/sort_cubit.dart';
